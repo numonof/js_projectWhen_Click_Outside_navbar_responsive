@@ -13,15 +13,25 @@ body {
 }
 
 @media (min-width:360px) {
+
+    #home {
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     #header {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        background-color: #000;
-        /* box-shadow: 0.5px 25px rgba(0, 0, 0, 0.05); */
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 5px 5px 12px;
         padding: 25px 20px 25px 20px;
         z-index: 1000;
     }
@@ -29,25 +39,23 @@ body {
     .logo {
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 28px;
         font-weight: 700;
         color: #fff;
+        letter-spacing: 1.5px;
         cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     #toggle {
         position: absolute;
         top: 25%;
         right: 20px;
+
+        display: block;
         width: 40px;
         height: 40px;
-        background-color: #fff;
         cursor: pointer;
-        display: block;
     }
 
     #toggle::before {
@@ -55,9 +63,10 @@ body {
         position: absolute;
         top: 18px;
         left: 10px;
+
         width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 5px;
         transform: translateY(-5px);
         transition: 0.5s;
@@ -68,9 +77,10 @@ body {
         position: absolute;
         top: 18px;
         left: 10px;
+
         width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 5px;
         transform: translateY(5px);
         transition: 0.5s;
@@ -85,62 +95,76 @@ body {
     }
 
     #toggle.active {
-        background-color: brown;
+        background-color: #3420202b;
     }
 
     #navbar {
         position: absolute;
         top: 75px;
         right: 0px;
-        background-color: #000;
-        transition: 0.5s;
-        overflow: hidden;
+
         width: 100%;
         height: 0;
+        overflow: hidden;
+        transition: 0.5s;
     }
 
     #navbar.active {
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 50px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 80px 0;
     }
 
     #navbar>ul {
         position: relative;
+        margin: 0;
+        padding: 0;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         list-style: none;
-        margin: 0;
-        padding: 0;
+    }
+
+    #navbar>ul>li {
+        margin: 5px 0;
     }
 
     #navbar>ul>li>a {
         text-decoration: none;
         text-transform: capitalize;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 24px;
         font-weight: 500;
         font-style: normal;
         color: #fff;
-        letter-spacing: 1px;
+        letter-spacing: 5px;
         cursor: pointer;
     }
 }
 
 @media (min-width:376px) {
 
+    #home {
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     #header {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        background-color: #000;
-        /* box-shadow: 0.5px 25px rgba(0, 0, 0, 0.05); */
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 5px 5px 12px;
         padding: 25px 20px 25px 20px;
         z-index: 1000;
     }
@@ -148,25 +172,23 @@ body {
     .logo {
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 28px;
         font-weight: 700;
         color: #fff;
+        letter-spacing: 1.5px;
         cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     #toggle {
         position: absolute;
         top: 25%;
         right: 20px;
+
+        display: block;
         width: 40px;
         height: 40px;
-        background-color: #fff;
         cursor: pointer;
-        display: block;
     }
 
     #toggle::before {
@@ -174,9 +196,10 @@ body {
         position: absolute;
         top: 18px;
         left: 10px;
+
         width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 5px;
         transform: translateY(-5px);
         transition: 0.5s;
@@ -187,9 +210,10 @@ body {
         position: absolute;
         top: 18px;
         left: 10px;
+
         width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 5px;
         transform: translateY(5px);
         transition: 0.5s;
@@ -204,62 +228,76 @@ body {
     }
 
     #toggle.active {
-        background-color: brown;
+        background-color: #3420202b;
     }
 
     #navbar {
         position: absolute;
         top: 75px;
         right: 0px;
-        background-color: #000;
-        transition: 0.5s;
-        overflow: hidden;
+
         width: 100%;
         height: 0;
+        overflow: hidden;
+        transition: 0.5s;
     }
 
     #navbar.active {
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 50px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 80px 0;
     }
 
     #navbar>ul {
         position: relative;
+        margin: 0;
+        padding: 0;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         list-style: none;
-        margin: 0;
-        padding: 0;
+    }
+
+    #navbar>ul>li {
+        margin: 5px 0;
     }
 
     #navbar>ul>li>a {
         text-decoration: none;
         text-transform: capitalize;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 24px;
         font-weight: 500;
         font-style: normal;
         color: #fff;
-        letter-spacing: 1px;
+        letter-spacing: 5px;
         cursor: pointer;
     }
 }
 
 @media (min-width:576px) {
 
+    #home {
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     #header {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        background-color: #000;
-        /* box-shadow: 0.5px 25px rgba(0, 0, 0, 0.05); */
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 5px 5px 12px;
         padding: 25px 20px 25px 20px;
         z-index: 1000;
     }
@@ -267,35 +305,34 @@ body {
     .logo {
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 22px;
+        font-size: 24px;
         line-height: 28px;
         font-weight: 700;
         color: #fff;
+        letter-spacing: 1.5px;
         cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     #toggle {
         position: absolute;
         top: 25%;
         right: 20px;
+
+        display: block;
         width: 40px;
         height: 40px;
-        background-color: #fff;
         cursor: pointer;
-        display: block;
     }
 
     #toggle::before {
         content: '';
         position: absolute;
-        top: 20px;
-        left: 8px;
-        width: 25px;
+        top: 18px;
+        left: 10px;
+
+        width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 5px;
         transform: translateY(-5px);
         transition: 0.5s;
@@ -304,11 +341,12 @@ body {
     #toggle::after {
         content: '';
         position: absolute;
-        top: 20px;
-        left: 8px;
-        width: 25px;
+        top: 18px;
+        left: 10px;
+
+        width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 5px;
         transform: translateY(5px);
         transition: 0.5s;
@@ -323,91 +361,116 @@ body {
     }
 
     #toggle.active {
-        background-color: brown;
+        background-color: #3420202b;
     }
 
     #navbar {
         position: absolute;
         top: 75px;
         right: 0px;
-        background-color: #000;
-        transition: 0.5s;
-        overflow: hidden;
+
         width: 100%;
         height: 0;
+        overflow: hidden;
+        transition: 0.5s;
     }
 
     #navbar.active {
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
-        /* display: block; */
-        padding: 50px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 80px 0;
     }
 
     #navbar>ul {
         position: relative;
+        margin: 0;
+        padding: 0;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         list-style: none;
-        margin: 0;
-        padding: 0;
+    }
+
+    #navbar>ul>li {
+        margin: 5px 0;
     }
 
     #navbar>ul>li>a {
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         font-weight: 500;
         font-style: normal;
         color: #fff;
-        letter-spacing: 1px;
+        letter-spacing: 5px;
         cursor: pointer;
     }
 }
 
 @media (min-width:768px) {
 
+    #home {
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
     #header {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.9);
         /* box-shadow: 0.5px 25px rgba(0, 0, 0, 0.05); */
         z-index: 1000;
     }
 
     .logo {
         position: relative;
-        color: #fff;
-        font-size: 28px;
-        line-height: 60px;
-        font-weight: 700;
-        text-decoration: none;
-        text-transform: capitalize;
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 28px;
+        line-height: 60px;
+        font-weight: 700;
         padding-left: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #toggle {
+        position: absolute;
+        top: 25%;
+        right: 20px;
+
+        display: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
     }
 
     #navbar {
         position: relative;
         top: 0px;
         right: 0px;
-        background-color: #000;
-        transition: 0.5s;
-        overflow: hidden;
+
         width: 100%;
         height: 100%;
         display: block;
+        transition: 0.5s;
+        overflow: hidden;
     }
 
     #navbar.active {
@@ -417,83 +480,91 @@ body {
 
     #navbar>ul {
         position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: end;
-        /* padding-left: 80px; */
-        list-style: none;
-        margin: 0;
-        padding: 0;
     }
 
     #navbar>ul>li>a {
-        color: #ffff;
-        display: inline-block;
         text-transform: capitalize;
         text-decoration: none;
         font-size: 18px;
-        line-height: 28px;
-        padding: 16px 8px 16px 8px;
-        letter-spacing: 2px;
         font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 3px;
+        color: #ffff;
+        display: inline-block;
+        padding: 16px 8px 16px 8px;
         transition: 0.5s all ease;
+        cursor: pointer;
     }
 }
 
 @media (min-width:992px) {
+    #home {
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
 
     #header {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.9);
+        /* box-shadow: 0.5px 25px rgba(0, 0, 0, 0.05); */
         z-index: 1000;
     }
 
     .logo {
         position: relative;
-        line-height: 60px;
-        color: #fff;
-        font-size: 28px;
-        font-weight: 700;
-        text-decoration: none;
-        text-transform: capitalize;
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 32px;
+        line-height: 60px;
+        font-weight: 500;
+        letter-spacing: 3px;
         padding-left: 20px;
+        color: #fff;
+        cursor: pointer;
     }
 
     #toggle {
         position: absolute;
-        top: 0;
-        right: 0;
-        width: 60px;
-        height: 60px;
-        background-color: aqua;
-        cursor: pointer;
-        display: none;
-        justify-content: center;
-        align-items: center;
-    }
+        top: 25%;
+        right: 20px;
 
+        display: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
 
     #navbar {
         position: relative;
         top: 0px;
         right: 0px;
-        background-color: #000;
-        transition: 0.5s;
-        overflow: hidden;
+
         width: 100%;
         height: 100%;
         display: block;
+        transition: 0.5s;
+        overflow: hidden;
     }
 
     #navbar.active {
@@ -503,117 +574,92 @@ body {
 
     #navbar>ul {
         position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: end;
-        padding-left: 80px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
     }
 
     #navbar>ul>li>a {
-        color: #fff;
-        display: inline-block;
         text-transform: capitalize;
         text-decoration: none;
         font-size: 18px;
-        line-height: 28px;
-        padding: 16px 8px 16px 8px;
-        letter-spacing: 2px;
         font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 3px;
+        color: #ffff;
+        display: inline-block;
+        padding: 16px 8px 16px 8px;
         transition: 0.5s all ease;
+        cursor: pointer;
     }
 }
 
 @media (min-width:1240px) {
+    #home {
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
 
     #header {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 5px 25px 52px;
+        padding: 10px 25px;
         z-index: 1000;
     }
 
     .logo {
         position: relative;
-        height: 60px;
-        line-height: 60px;
-        color: #fff;
-        font-size: 28px;
-        font-weight: 700;
-        text-decoration: none;
-        text-transform: capitalize;
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 32px;
+        line-height: 60px;
+        font-weight: 500;
+        letter-spacing: 3px;
         padding-left: 20px;
+        color: #fff;
+        cursor: pointer;
     }
 
     #toggle {
         position: absolute;
-        top: 0;
-        right: 0;
-        width: 60px;
-        height: 60px;
-        background-color: aqua;
-        cursor: pointer;
+        top: 25%;
+        right: 20px;
+
         display: none;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #toggle::before {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 5px;
-        transform: translateY(-5px);
-        transition: 0.5s;
-    }
-
-    #toggle::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #12334e;
-        border-radius: 5px;
-        transform: translateY(5px);
-        transition: 0.5s;
-    }
-
-    #toggle.active::before {
-        transform: translateY(0px) rotate(45deg);
-    }
-
-    #toggle.active::after {
-        transform: translateY(0px) rotate(-45deg);
-    }
-
-    #toggle.active {
-        background-color: brown;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
     }
 
     #navbar {
         position: relative;
         top: 0px;
         right: 0px;
-        background-color: #000;
-        transition: 0.5s;
-        overflow: hidden;
+
         width: 100%;
         height: 100%;
         display: block;
+        transition: 0.5s;
+        overflow: hidden;
     }
 
     #navbar.active {
@@ -623,28 +669,27 @@ body {
 
     #navbar>ul {
         position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: end;
-        padding-left: 80px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
     }
 
     #navbar>ul>li>a {
-
-        color: #fff;
-        display: inline-block;
         text-transform: capitalize;
         text-decoration: none;
         font-size: 18px;
-        line-height: 28px;
-        padding: 8px 16px 8px 16px;
-        letter-spacing: 2px;
         font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 3px;
+        color: #ffff;
+        display: inline-block;
+        padding: 16px 8px 16px 8px;
         transition: 0.5s all ease;
+        cursor: pointer;
     }
-
 }
